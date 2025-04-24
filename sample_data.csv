@@ -1,0 +1,8 @@
+Case ID,Status,Submission Date,Income
+1001,Approved,2025-04-01,1500
+1002,Approved,2025-04-02,0
+1003,Pending,20250403,1200
+1004,,2025-04-04,800
+1005,Denied,2025-04-05,
+1001,Approved,2025-04-06,1600
+,Unknown,2025-04-07,1000
