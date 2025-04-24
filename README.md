@@ -31,7 +31,7 @@ Built for teams who need to validate incoming data for Medicaid, SNAP, TANF, QA 
 
 ---
 
-Made with 💡 by #EliteTheOctoDog 🐙🐶 [LinkedIn →](https://linkedin.com/in/JoeNetherland)
+Made with 💡 by #EliteTheOctoDog 🐙🐶™ [LinkedIn →](https://linkedin.com/in/JoeNetherland)
 
 <details>
 <summary>📘 Instructions for Non-Technical Users (Click to Expand)</summary>
