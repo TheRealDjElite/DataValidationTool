@@ -1,6 +1,6 @@
 # DataValidationTool
 
-_Applied learning prototype. Built with Python using AI assistance. Not a production system._
+⁂ _Applied learning prototype. Built with Python using AI assistance. Not a production system._
 
 A Python-based tool to scan CSV data for errors, missing values, and logic issues across case records.
 
