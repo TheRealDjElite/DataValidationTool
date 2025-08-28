@@ -1,4 +1,4 @@
-# DataValidationTool
+# Data Validation Tool
 
 ⁂ _Applied learning prototype. Built with Python using AI assistance. Not a production system._
 
