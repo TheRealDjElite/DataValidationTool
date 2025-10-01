@@ -1,14 +1,14 @@
 # Data Validation Tool
 
-⁂ _Applied learning prototype. Built with Python using AI assistance. Not a production system._
+⚠️ Applied learning prototype. Built with Python as a learning project. Not for production use.
 
-A Python-based tool to scan CSV data for errors, missing values, and logic issues across case records.
+A Python-based tool that checks CSV files for missing values, formatting errors, and logic issues in case records. Helps teams catch data problems before audits or eligibility reviews.
 
 ## 🔍 What It Does
-- Scans CSV files for common data issues like missing fields, duplicates, and formatting problems  
-- Flags records with invalid or inconsistent values (e.g. status without income, date format issues)  
-- Outputs a summary of all errors and saves a clean error report  
-- Helps teams catch data issues early in eligibility, audit, or quality review processes  
+- Scan CSV files for common data issues (missing fields, duplicates, formatting errors)  
+- Flag inconsistent or invalid values (e.g., status without income, bad date formats)  
+- Output a clean error report (`error_report.csv`) and a summary of issues  
+- Support QA, audit prep, and data quality checks for public program workflows
 
 ## 🧰 Tools Used
 - Python 3  
@@ -29,7 +29,7 @@ A Python-based tool to scan CSV data for errors, missing values, and logic issue
 4. Review the terminal output or open `error_report.csv` to see the flagged issues
 
 ## ✅ Use Case
-Built for teams who need to validate incoming data for Medicaid, SNAP, TANF, QA reviews, or audit prep. Especially useful for public program workflows that rely on accurate case records.
+Designed as a demo for data validation in eligibility and compliance. Shows how Python can be applied to automate checks and catch errors early in case data workflows.
 
 ---
 
