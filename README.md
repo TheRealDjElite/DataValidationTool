@@ -1,6 +1,6 @@
 # Data Validation Tool
 
-⚠️ Applied learning prototype. Built with Python as a learning project. Not for production use.
+⚠️ Skill-building project demonstrating applied Python for automated data quality checks across case records.
 
 A Python-based tool that checks CSV files for missing values, formatting errors, and logic issues in case records. Helps teams catch data problems before audits or eligibility reviews.
 
