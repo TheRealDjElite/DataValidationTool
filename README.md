@@ -8,15 +8,21 @@ Applies rule-based logic to identify missing, invalid, or inconsistent values an
 
 - Checks required fields (Case ID, Status, Submission Date, Income) for missing values
 - Flags duplicate Case IDs
-- Flags invalid date formats (expected YYYY-MM-DD) and invalid status values
+- Flags invalid status values (anything other than Approved, Pending, or Denied)
+- Flags invalid submission dates, including wrong formats and dates that don't exist (expected YYYY-MM-DD)
+- Flags non-numeric income values
 - Flags rule conflicts, such as an approved case with no or zero income
 - Generates `error_report.csv` listing each flagged row and its errors
+
+## 🧪 Sample Data
+
+`sample_data.csv` includes 10 records: 1 clean record and 9 with intentional errors, covering every check above. The clean record (Case ID 1008) is not flagged.
 
 ## 🧰 Tools Used
 
 - Python 3 (AI-assisted development)
 - pandas
-- re (regular expressions)
+- datetime (standard library)
 
 ## 📁 File Overview
 

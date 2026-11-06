@@ -6,3 +6,6 @@ Case ID,Status,Submission Date,Income
 1005,Denied,2025-04-05,
 1001,Approved,2025-04-06,1600
 ,Unknown,2025-04-07,1000
+1006,Pending,2025-02-30,900
+1007,Approved,2025-04-08,abc
+1008,Pending,2025-04-09,1100
