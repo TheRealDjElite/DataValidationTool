@@ -18,6 +18,12 @@ Applies rule-based logic to identify missing, invalid, or inconsistent values an
 
 `sample_data.csv` includes 10 records: 1 clean record and 9 with intentional errors, covering every check above. The clean record (Case ID 1008) is not flagged.
 
+## 📊 Sample Output
+
+Running the script on the sample data flags 9 of 10 rows. Row numbers match the spreadsheet rows in `sample_data.csv` (row 1 is the header).
+
+![Error report generated from the sample data](images/error_report.png)
+
 ## 🧰 Tools Used
 
 - Python 3 (AI-assisted development)
@@ -29,6 +35,7 @@ Applies rule-based logic to identify missing, invalid, or inconsistent values an
 - `data_validation_tool.py` - Loads input data, applies validation rules, outputs results
 - `sample_data.csv` - Test dataset with intentional errors
 - `error_report.csv` - Generated output of flagged records (created when the script runs)
+- `images/error_report.png` - Screenshot of the error report from the sample data
 
 ## ▶ How to Use It
 
