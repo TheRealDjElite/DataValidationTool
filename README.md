@@ -20,7 +20,7 @@ Applies rule-based logic to identify missing, invalid, or inconsistent values an
 
 ## 📊 Sample Output
 
-Running the script on the sample data flags 9 of 10 rows. Row numbers match the spreadsheet rows in `sample_data.csv` (row 1 is the header).
+Running the script on the sample data flags 9 of 10 rows. Row numbers match the spreadsheet rows in `sample_data.csv` (row 1 is the header). The Check column is added in the screenshot for readability and is not part of the CSV output.
 
 ![Error report generated from the sample data](images/error_report.png)
 
@@ -40,8 +40,8 @@ Running the script on the sample data flags 9 of 10 rows. Row numbers match the 
 ## ▶ How to Use It
 
 1. Install dependencies: `pip install pandas`
-2. Place your data in `sample_data.csv`, or change `INPUT_FILE` in the script to point to your file
-3. Run `data_validation_tool.py`
+2. To use your own data, change `INPUT_FILE` in the script to point to your file
+3. Run `python data_validation_tool.py`
 4. Review `error_report.csv` for flagged issues
 
 ## 📌 Purpose
