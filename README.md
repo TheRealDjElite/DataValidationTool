@@ -20,7 +20,7 @@ Applies rule-based logic to identify missing, invalid, or inconsistent values an
 
 ## 📊 Sample Output
 
-Running the script on the sample data flags 9 of 10 rows. Row numbers match the spreadsheet rows in `sample_data.csv` (row 1 is the header). The Check column is added in the screenshot for readability and is not part of the CSV output.
+Running the script on the sample data flags 9 of 10 rows. The Check column is added in the screenshot for readability and is not part of the CSV output.
 
 ![Error report generated from the sample data](images/error_report.png)
 
