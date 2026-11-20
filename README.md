@@ -1,8 +1,8 @@
 # 🕵️‍♂️ Data Validation Tool
 
-Python-based tool for structured data validation and automated error detection in CSV datasets. Designed to support QA workflows that require consistent field-level checks and early identification of data integrity issues.
+Python tool for checking a CSV file for missing, invalid, and conflicting values before the data reaches QA review. Built for review teams who receive record data from another source and want every bad entry listed before review starts.
 
-Applies rule-based logic to identify missing, invalid, or inconsistent values and produces a structured error report for review.
+Each run applies field-level rules (required fields, allowed status values, real dates, numeric income, and approval rules) and writes every flagged row with its errors to `error_report.csv`.
 
 ## 🔍 What It Does
 
@@ -20,7 +20,7 @@ Applies rule-based logic to identify missing, invalid, or inconsistent values an
 
 ## 📊 Sample Output
 
-Running the script on the sample data flags 9 of 10 rows. The Check column is added in the screenshot for readability and is not part of the CSV output.
+Running the script on the sample data flags 9 of 10 rows. Row numbers match the spreadsheet rows in `sample_data.csv` (row 1 is the header).
 
 ![Error report generated from the sample data](images/error_report.png)
 
@@ -46,4 +46,4 @@ Running the script on the sample data flags 9 of 10 rows. The Check column is ad
 
 ## 📌 Purpose
 
-Built for structured environments where automated validation is needed to identify data quality issues before QA review or downstream processing. Focuses on improving consistency, reducing manual review effort, and enforcing basic data integrity rules.
+Built from QA review work, where keying errors and missing fields slow down every case they touch. Running this first gives the reviewer a list of every problem row and what's wrong with each one, so review time goes to decisions instead of hunting for typos.
