@@ -22,7 +22,22 @@ Each run applies field-level rules (required fields, allowed status values, real
 
 Running the script on the sample data flags 9 of 10 rows. Row numbers match the spreadsheet rows in `sample_data.csv` (row 1 is the header).
 
-![Error report generated from the sample data](images/error_report.png)
+![Error report from the sample data, with check type labels added for readability](images/error_report.png)
+
+## ✅ UAT Testing
+
+Tested against 7 business rules with 21 UAT test cases covering the sample data, edge cases, and file checks.
+
+| Total | Pass | Open Question | Fail |
+|---|---|---|---|
+| 21 | 18 | 2 | 1 |
+
+See [`UAT_TEST_PLAN.md`](UAT_TEST_PLAN.md) for the business rules, test cases, results, defect log, and open questions.
+
+## 🗂️ Known Limits
+
+- **A row with an unquoted comma stops the run.** The script shows a parsing error and writes no report (DEF-01).
+- **Formatted income gets flagged.** Values such as $900 or 1,200 fail the numeric check. The business rule needs confirmation (OQ-01).
 
 ## 🧰 Tools Used
 
@@ -36,6 +51,8 @@ Running the script on the sample data flags 9 of 10 rows. Row numbers match the 
 - `sample_data.csv` - Test dataset with intentional errors
 - `error_report.csv` - Generated output of flagged records (created when the script runs)
 - `images/error_report.png` - Screenshot of the error report from the sample data
+- `UAT_TEST_PLAN.md` - UAT test plan with business rules, test cases, results, defect log, and open questions
+- `test_data/` - Edge-case and file-check inputs used in UAT
 
 ## ▶ How to Use It
 
