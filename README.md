@@ -16,7 +16,7 @@ Each run applies field-level rules (required fields, allowed status values, real
 
 ## 🧪 Sample Data
 
-`sample_data.csv` includes 10 records: 1 clean record and 9 with intentional errors, covering every check above. The clean record (Case ID 1008) is not flagged.
+[`sample_data.csv`](sample_data.csv) includes 10 records: 1 clean record and 9 with intentional errors, covering every check above. The clean record (Case ID 1008) is not flagged.
 
 ## 📊 Sample Output
 
@@ -47,17 +47,17 @@ See [`UAT_TEST_PLAN.md`](UAT_TEST_PLAN.md) for the business rules, test cases, r
 
 ## 📁 File Overview
 
-- `data_validation_tool.py` - Loads input data, applies validation rules, outputs results
-- `sample_data.csv` - Test dataset with intentional errors
+- [`data_validation_tool.py`](data_validation_tool.py) - Loads input data, applies validation rules, outputs results
+- [`sample_data.csv`](sample_data.csv) - Test dataset with intentional errors
 - `error_report.csv` - Generated output of flagged records (created when the script runs)
-- `images/error_report.png` - Screenshot of the error report from the sample data
-- `UAT_TEST_PLAN.md` - UAT test plan with business rules, test cases, results, defect log, and open questions
-- `test_data/` - Edge-case and file-check inputs used in UAT
+- [`images/error_report.png`](images/error_report.png) - Screenshot of the error report from the sample data
+- [`UAT_TEST_PLAN.md`](UAT_TEST_PLAN.md) - UAT test plan with business rules, test cases, results, defect log, and open questions
+- [`test_data/`](test_data) - Edge-case and file-check inputs used in UAT
 
 ## ▶ How to Use It
 
 1. Install dependencies: `pip install pandas`
-2. To use your own data, change `INPUT_FILE` in the script to point to your file
+2. To use your own data, change `INPUT_FILE` in [`data_validation_tool.py`](data_validation_tool.py) to point to your file
 3. Run `python data_validation_tool.py`
 4. Review `error_report.csv` for flagged issues
 
